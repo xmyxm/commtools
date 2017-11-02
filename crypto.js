@@ -37,7 +37,7 @@ var key = 'ac1f3z1ed5n8f9h0';
 console.log('加密的key:', key.toString('hex'));
 var iv = '2624750004598718';
 console.log('加密的iv:', iv);
-var data = "Hello, nodejs. 演示aes-128-cbc加密和解密";
+var data = '{"cityname":"上海","dishname":"石锅鱼"}';
 console.log("需要加密的数据:", data);
 var crypted = encrypt(key, iv, data);
 console.log("数据加密后:", crypted);
