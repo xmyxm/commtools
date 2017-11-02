@@ -17,7 +17,7 @@ var encrypt = function (key, iv, data) {
     crypted = new Buffer(crypted, 'binary').toString('base64');
     return crypted;
 };
- 
+
 /**
  * 解密方法
  * @param key      解密的key
@@ -32,12 +32,12 @@ var decrypt = function (key, iv, crypted) {
     decoded += decipher.final('utf8');
     return decoded;
 };
- 
+
 var key = 'ac1f3z1ed5n8f9h0';
 console.log('加密的key:', key.toString('hex'));
-var iv = '2624750004598718';
+var iv = '2389742334324786';
 console.log('加密的iv:', iv);
-var data = '{"cityname":"上海","dishname":"石锅鱼"}';
+var data = '{"cityname":"长沙","dishname":"辣椒炒肉"}';
 console.log("需要加密的数据:", data);
 var crypted = encrypt(key, iv, data);
 console.log("数据加密后:", crypted);
